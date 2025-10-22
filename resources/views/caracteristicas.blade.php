@@ -4,6 +4,12 @@
 <title>Características</title>
 @endsection
 
+@section('hero')
+<section class="hero">
+    <h1 class="display-3 fw-bold">Características del Parque</h1>
+</section>
+@endsection
+
 @section('contenido')
 <h2 class="fw-bold text-success mb-4">Características del Parque</h2>
 <ul class="list-group">

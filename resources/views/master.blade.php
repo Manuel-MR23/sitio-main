@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    {{-- Título dinámico --}}
     @yield('pestaña')
 
+    {{-- Bootstrap CSS --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
@@ -36,6 +39,7 @@
 
 <body>
 
+    {{-- Navbar --}}
     <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">Parque Las Riberas</a>
@@ -45,28 +49,29 @@
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('/caracteristicas') }}">Características</a>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('/caracteristicas') }}">Características</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('/historia') }}">Historia</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('/ubicacion') }}">Ubicación</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('/opinion') }}">Opinión</a></li>
-
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="hero">
-        <h1 class="display-3 fw-bold">Parque Las Riberas</h1>
-    </section>
+    {{-- Hero dinámico --}}
+    @yield('hero')
 
+    {{-- Contenido dinámico --}}
     <div class="container my-5">
         @yield('contenido')
     </div>
 
+    {{-- Footer --}}
     <footer>
         <p>© 2025 Parque Las Riberas | Desarrollado por Chino 💻</p>
     </footer>
 
+    {{-- Bootstrap JS --}}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
