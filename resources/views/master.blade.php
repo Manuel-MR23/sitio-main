@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,10 +45,11 @@
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ url('/caracteristicas') }}">Características</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('/caracteristicas') }}">Características</a>
                     <li class="nav-item"><a class="nav-link" href="{{ url('/historia') }}">Historia</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('/ubicacion') }}">Ubicación</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('/opinion') }}">Opinión</a></li>
+
                 </ul>
             </div>
         </div>
@@ -67,4 +69,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
