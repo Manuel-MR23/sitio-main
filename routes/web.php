@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\OpinionController;
 
 Route::get('/', function () {
     return view('index');
@@ -22,3 +22,5 @@ Route::get('/ubicacion', function () {
 Route::get('/opinion', function () {
     return view('opinion');
 });
+
+Route::post('/guardarOpinion',[OpinionController::class,'guardarOpinion']);
